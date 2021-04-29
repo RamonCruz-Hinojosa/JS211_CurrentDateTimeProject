@@ -14,19 +14,19 @@ const displayDate = () => {
 
 // Write a JavaScript program to convert a number to a string.
 
-const numToString = (num) => {
-  return String(num);
+const numToString = () => {
+  console.log(String(document.getElementById("numtostr").value));
 };
 
-console.log(numToString(3));
+// console.log(numToString(3));
 
 // Write a JavaScript program to convert a string to the number.
 
-const stringToNum = (str) => {
-  return Number(str);
+const stringToNum = () => {
+  console.log(Number(document.getElementById("strtonum").value));
 };
 
-console.log(stringToNum("4"));
+// console.log(stringToNum("4"));
 
 // Write a JavaScript program that takes in different datatypes and prints out whether they are a:
 // * Boolean
@@ -40,7 +40,7 @@ const checkType = (type) => {
   return typeof type;
 };
 
-console.log(checkType(4));
+// console.log(checkType(4));
 
 // Write a JavaScript program that adds 2 numbers together.
 
@@ -48,7 +48,7 @@ const addTwo = (num1, num2) => {
   return num1 + num2;
 };
 
-console.log(addTwo(3, 6));
+// console.log(addTwo(3, 6));
 
 // Write a JavaScript program that runs only when 2 things are true.
 
@@ -60,7 +60,7 @@ const bothTrue = (check1, check2) => {
   }
 };
 
-console.log(bothTrue(4, 6));
+// console.log(bothTrue(4, 6));
 
 // Write a JavaScript program that runs when 1 of 2 things are true.
 
@@ -72,12 +72,18 @@ const oneTrue = (arg1, arg2) => {
   }
 };
 
-console.log(oneTrue(3, 4));
+// console.log(oneTrue(3, 4));
 // Write a JavaScript program that runs when both things are not true.
 
 const bothNotTrue = (argu1, argu2) => {
-  if ()
-}
+  if (argu1 != 45 && argu2 != 60) {
+    return console.log("both not true");
+  } else {
+    return console.log("one or both are true");
+  }
+};
+
+// console.log(bothNotTrue(45, 0));
 
 // ***************************
 //         PART TWO
