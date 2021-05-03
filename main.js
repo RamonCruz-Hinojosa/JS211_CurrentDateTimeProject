@@ -16,6 +16,11 @@ const displayDate = () => {
 
 const numToString = () => {
   console.log(String(document.getElementById("numtostr").value));
+  document.getElementById("numberstr").innerHTML =
+    "Number changed to string! More info in the console.";
+  console.log(
+    "This data type is " + typeof document.getElementById("numtostr").value
+  );
 };
 
 // console.log(numToString(3));
@@ -24,6 +29,12 @@ const numToString = () => {
 
 const stringToNum = () => {
   console.log(Number(document.getElementById("strtonum").value));
+  document.getElementById("stringnum").innerHTML =
+    "string changed into a number!";
+  console.log(
+    "this data type is " +
+      typeof Number(document.getElementById("strtonum").value)
+  );
 };
 
 // console.log(stringToNum("4"));
@@ -36,27 +47,34 @@ const stringToNum = () => {
 // * NaN
 // * String
 
-const checkType = (type) => {
-  return typeof type;
+// i dont know how to make an input field that can take all data types
+
+const checkType = () => {
+  console.log(typeof document.getElementById("checkdata").value);
 };
 
 // console.log(checkType(4));
 
 // Write a JavaScript program that adds 2 numbers together.
+let answerAddTwo = document.getElementById("answeraddtwo");
 
-const addTwo = (num1, num2) => {
-  return num1 + num2;
+const addTwo = () => {
+  let one = Number(firstnum.value) || 0;
+  let two = Number(secondnum.value) || 0;
+  let sum = one + two;
+  answeraddtwo.innerHTML = "The sum of those numbers is " + sum;
 };
 
 // console.log(addTwo(3, 6));
 
 // Write a JavaScript program that runs only when 2 things are true.
 
-const bothTrue = (check1, check2) => {
-  if (check1 == 5 && check2 == 6) {
-    return console.log("Both true");
+const bothTrue = () => {
+  if (Number(truefirst.value) === 1 && Number(truesecond.value) === 2) {
+    document.getElementById("arebothtrue").innerHTML = "Both are true!";
   } else {
-    return console.log("Not both true");
+    document.getElementById("arebothtrue").innerHTML =
+      "One or both are not true!";
   }
 };
 
@@ -64,22 +82,22 @@ const bothTrue = (check1, check2) => {
 
 // Write a JavaScript program that runs when 1 of 2 things are true.
 
-const oneTrue = (arg1, arg2) => {
-  if (arg1 == 3 || arg2 == 4) {
-    return console.log("one is true");
+const oneTrue = () => {
+  if (Number(onetruefirst.value) === 1 || Number(onetruesecond.value) === 2) {
+    document.getElementById("isonetrue").innerHTML = "One or both are true!";
   } else {
-    return console.log("neither is true");
+    document.getElementById("isonetrue").innerHTML = "Both are not true!";
   }
 };
 
 // console.log(oneTrue(3, 4));
 // Write a JavaScript program that runs when both things are not true.
 
-const bothNotTrue = (argu1, argu2) => {
-  if (argu1 != 45 && argu2 != 60) {
-    return console.log("both not true");
+const bothNotTrue = () => {
+  if (Number(nottrueone.value) != 1 && Number(nottruetwo.value) != 2) {
+    document.getElementById("bothnottrue").innerHTML = "Both are not true!";
   } else {
-    return console.log("one or both are true");
+    document.getElementById("bothnottrue").innerHTML = "One or both are true!";
   }
 };
 

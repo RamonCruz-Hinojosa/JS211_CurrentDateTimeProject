@@ -15,16 +15,52 @@
       <label for="numtostr">Convert number to string</label>
       <input id="numtostr" type="number" name="numtostr">
       <button name="numtostr" onclick="numToString()">Convert</button>
+      <p id="numberstr"></p>
     </div>
     <hr/>
     <div>
       <label for="strtonum">Convert string to number</label>
       <input type="text" id="strtonum">
       <button onclick="stringToNum()">Convert</button>
+      <p id="stringnum"></p>
     </div>
     <hr>
     <div>
-      
+      <label for="checktype">Check the data type!</label>
+      <input type="text" id="checkdata">
+      <button onclick="checkType()">Check Type</button>
+    </div>
+    <hr>
+    <div>
+      <label for="addtwo">Add these two numbers</label>
+      <input type="text" name="addtwo" id="firstnum">
+      <input type="text" name="addtwo" id="secondnum">
+      <button onclick="addTwo()">Add</button>
+      <p id="answeraddtwo">The sum of those numbers appears here</p>
+    </div>
+    <hr>
+    <div>
+      <label for="twotrue">The first number has to be 1 AND the second number has to be 2.</label>
+      <input type="text" name="twotrue" id="truefirst">
+      <input type="text" name="twotrue" id="truesecond">
+      <button onclick="bothTrue()">Check both</button>
+      <p id="arebothtrue">Are both true?</p>
+    </div>
+    <hr>
+    <div>
+      <label for="onetrue">first number has to be 1 OR the second number has to be 2</label>
+      <input type="text" name="onetrue" id="onetruefirst">
+      <input type="text" name="onetrue" id="onetruesecond">
+      <button onclick="oneTrue()">Check</button>
+      <p id="isonetrue">Is one true?</p>
+    </div>
+    <hr>
+    <div>
+      <label for="nottrue">The first number cant be 1 AND the second number cant be 2</label>
+      <input type="text" name="nottrue" id="nottrueone">
+      <input type="text" name="nottrue" id="nottruetwo">
+      <button onclick="bothNotTrue()">Check</button>
+      <p id="bothnottrue">Are both not true?</p>
     </div>
   </body>
 </html>
